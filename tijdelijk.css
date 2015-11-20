@@ -1,0 +1,144 @@
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333;
+}
+
+.body .container {
+  border-radius: 0; /* 4px;*/
+  padding: 0; /* 20px;*/
+  border: none; /* 1px solid rgba(0,0,0,0.15); */
+  box-shadow: none; /* was 0px 0px 6px rgba(0,0,0,0.05); */
+}
+
+.header {
+  margin-bottom: -135px; /* 10px */
+}
+.navigation {
+  margin-bottom: -7em !important;
+}
+
+.menubeeld {
+  position: relative;
+  left: 20em;
+}
+.naambeeld {
+  position: relative;
+  left: 6.4em;
+  top: -11.6em;
+}
+.navigation .nav-pills {
+  /*position: relative;*/
+  /*top: -8.5em;*/
+}
+
+
+/* Hoofdmenu */
+.navigation{margin: 2em 0;border: 0;  }
+.navigation li{font-size:13px;margin-right:29px;float: left;}
+.navigation li a:link,
+ .navigation li a:visited { font-weight:bold;border-right:0px solid #000;color:rgb(0,0,150);padding:0 0px 1px 0px;text-transform:none;
+}
+.navigation ul.nav.menu li.active, .navigation ul.nav.menu li.active a:visited { color:rgb(64,185,212);border-right:0px solid #000;border-bottom:solid 4px rgb(64,185,212);border-radius:0; background:transparent;
+}
+.navigation li a:hover { border-bottom:solid 4px rgb(64,185,212); border-radius: 0; background:transparent;}
+.navigation li a:active {}
+ul.nav.menu li.active {
+    /*background: none;border-bottom:solid 4px rgb(64,185,212);*/
+  }
+.breadcrumb, .breadcrumb li, .breadcrumb li.active {background: none;}
+.breadcrumb li.active {display: none;} /* tekst "U bevindt zich hier" en laatste kruimel weglaten? */
+.breadcrumb { float:right; background: none; padding: 0; margin: 0 0 0 0; width: 100%;}
+/*.divider.icon-location { display: none;}*/
+
+.breadcrumb li, .breadcrumb > li > a, .breadcrumb li.active {margin: 0 0; }
+.breadcrumb li a:link { font-weight: normal;     padding: 0 2px 0px 2px;}
+
+/* Praktijkmenu */
+.moduletable ul.nav.menu.pm {
+  /*display: block;*/
+    /*float: left;*/
+    /*clear: both;*/
+    margin: 2em 0 0 0;
+}
+.moduletable ul.nav.menu li a {
+    font-weight: normal;
+    font-size: 14px;
+    padding: 2px 30px 2px 9px;
+    margin: 5px 0;
+    display: inline-block;
+    color: rgb(64,185,212);
+    border: 0;
+  }
+  .moduletable ul.nav.menu li:hover {
+    background: rgb(225,233,244);
+  }
+  .moduletable ul.nav.menu li.active {
+  background: rgb(225,233,244) ;
+}
+.moduletable ul.nav.menu li.active a {
+  background: url(/templates/gcb/images/gtr.png) 10px 4px no-repeat;
+  padding-left: 25px;
+}
+
+
+/* ==================== MOBIEL ================== */
+@media (max-width:980px) {
+.body-position { /*position: fixed !important; */ /* in style.css tussen comments geplaatst 27-10-2015 */
+}
+ul.nav.menu.hm, ul.nav.menu.pm {display: none;}
+.naambeeld, .menubeeld, .search { display:none; }
+.GC{width: 50%;     margin-top: 12px;}
+.header, .navigation { margin: -1em;
+}
+/* hamburger menu */
+.menu_button.menu_icon {
+  background: none;
+  float: right;
+  color: rgb(0,0,150);
+  margin: 30px 0 0 0px;
+  font-weight: bold;
+}
+.menu_button.menu_icon .navicon-line {
+    background-color: rgb(0,0,150);
+  }
+.menu_button.menu_icon::before {
+    content: "MENU";
+    margin-right: 40px;
+    float: right;
+}
+/* ARTIKELEN */
+.row-fluid{
+  width: 107%;
+  margin: 6em 0 0 -10px;
+  }
+
+main#content h1 {
+    color: rgb(64,185,212);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    /*margin: 0 0 -5px 0;*/
+}
+main#content .headline2 {
+    color: rgb(37,74,149);
+    font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    display: block;
+}
+
+/* Fly-out menu */
+#yt-off-resmenu.mm-ismenu {
+    background: #3AE;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: sans-serif;
+}
+a.mm-subopen {
+  background: rgb(64,185,212);
+}
+.mm-menu>.mm-panel { }
+.nav.mm-list > li > a:hover, .nav.mm-list > li > a:focus {background-color: #3ff;}
+nav .mm-list .mm-panel .mm-current {     background-color: #3ff;}
+
+}

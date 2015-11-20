@@ -1,0 +1,706 @@
+/* 19-11-15 - 0903-gcb-2015-protostar/templates/protostar/gcb-protostar */
+/* Toevoegen FORMULIEREN */ /* donkerblauw =rgb(37,74,149) = #254A95 ++++ kleur groen = rgb(203, 211, 0) */
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video, .navigation {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.moduletable, .site.com_content, .site.com_contact {
+    padding: 0;
+}
+.container {
+    background: url(/images/algemeen/gcb-logo-bg.png) 630px 320px no-repeat ;
+}
+a {
+}
+a:hover, a:active, a:focus {
+    background: rgb(225,233,244);
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: rgb(37,74,149);
+}
+body.site.com_content, body.site.com_contact {
+    border-top: 0;
+}
+.body .container {
+    border: 0;
+    width: 98%;
+    margin: 0 auto;
+    padding: 0.5em 1%;
+    box-shadow: none;
+}
+.brand, .site-title {
+    display: none;
+}
+
+.header {
+    margin-bottom: 5%;
+}
+/* Ik wil dat de header verkleint bij smaller maken van het venster */
+/* header-search staat op 100% , logo staat links + beelden geschaald */
+/* + relative pos eruit, margins in % gebruiken om te positioneren */
+.header-search {
+    width: 100%;
+}
+/* nLevel menu niet in desktop */
+nav#rain_main_ul {
+    display: none !important;
+}
+.logo-gc {
+    width: 19%;
+}
+.breadcrumb {
+    margin-top: -8%;
+    margin-right: 6.5%;
+    font-size: 0.7em;
+    float: right;
+    width: 70%;
+    text-align: right;
+    padding: 0 0;
+}
+.breadcrumb, .breadcrumb li, .breadcrumb li.active {
+    background: none;
+    text-shadow: none;
+  }
+.search {
+    margin-top: -4%;
+    margin-right: 6.5%;
+    float: right;
+}
+.search .inputbox {
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 0;
+    /*-webkit  toegevoegd voor iPad, anders afgeronde hoeken inputbox */
+    -webkit-appearance: none;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ddd;
+    width: 62%;
+}
+.search .inputbox {
+  float: left;
+}
+.search form button {
+    border: none;
+    border-radius: 0;
+    background: rgb(107,135,194);
+    font-weight: bold;
+}
+.search form button:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+    background-color: rgb(0,0,150) ;
+}
+.vlag {
+    float: right;
+    margin-right: 43%;
+    margin-top: -3%;
+}
+
+.menubeeld {
+    width: 69.7%;
+    margin-left: 23.9%;
+    margin-top: 0%;
+}
+
+.naambeeld {
+    margin-left: 9%;
+    width: 67%;
+    margin-top: -14%;
+}
+
+/* HOODFMENU (hm) */
+.navigation {
+}
+ul.nav.menu.hm {
+    font-size: 0.84em;
+    font-weight: bold;
+}
+ul.nav.menu.hm li {
+    background: 0;
+    float: left;
+    margin: 0 2.5em 0 0 ;
+}
+ul.nav.menu.hm li a {
+    color: rgb(0,0,150);
+}
+ul.nav.menu.hm li.active a {
+    color: rgb(64,185,212);
+    border-bottom: 4px solid rgb(64,185,212);
+}
+ul.nav.menu.hm li a:hover {
+    background: 0;
+    border-bottom: 4px solid rgb(64,185,212);
+}
+
+/* PRAKTIJKMENU (pm) */
+ul.nav.menu.pm li a {
+    background: 0;
+    margin: 1em 0;
+}
+ul.nav.menu.pm li a {
+    color: rgb(64,185,212);
+    padding: 0.15em 0;
+    padding-left: 0.4em;
+}
+ul.nav.menu.pm li.active {
+    background: none;
+}
+ul.nav.menu.pm li a:hover, ul.nav.menu.pm li ul.nav-child li a:hover {
+    background: rgb(225,233,244);
+    width: 11em;
+}
+ul.nav.menu.pm li.active a {
+    background: rgb(225,233,244) url(/templates/gcb/images/gtr.png) 0.45em 0.45em no-repeat;
+    color: rgb(64,185,212);
+    padding: 0.15em 0;
+    padding-left: 2em;
+    width: 10em;
+}
+ul.nav.menu.pm li ul.nav-child li {
+    font-size: 1.1em;
+    padding: 0.5em 0;
+}
+ul.nav.menu.pm li ul.nav-child li a {
+    color: rgb(107, 135, 194);
+    font-weight: bold !important;
+    background: transparent;
+}
+ul.nav.menu.pm li ul.nav-child li.active a {
+    color: rgb(0, 0, 150);
+    background: url(/templates/gcb/images/gtr-rfl.png) 0.9em 0.3em no-repeat;
+    margin-left: 1.1em;
+}
+div#sidebar.span3 {
+    margin-top: -0.8em;
+    width: 22.5%;
+}
+.row-fluid {
+    font-size: 0.9em;
+    margin-top: 3%;
+    float: left;
+  }
+
+main#content h1, .page-header h1 {
+    font-size: 1.2em;
+    color: rgb(64,185,212);
+    font-weight: normal;
+}
+main#content .page-header {
+    border-bottom: 0;
+}
+main#content h2, .headline2, .page-header h2 {
+    display: block;
+    color: rgb(37, 74, 149);
+    font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+main#content {
+    line-height: 1.5em;
+    margin-left: 1.6%;
+}
+main#content ul {
+    list-style-position: inside;
+}
+main#content .item-page h3 {
+    color: rgb(64,185,212);
+}
+/* kopjes en tekst in contactlijst fysio medewerkers */
+main#content .contact .page-header h2 {
+    margin: 0.5em 0;
+}
+.contact h3 {
+    display: none;
+}
+.contact-miscinfo .dl-horizontal dd {
+    margin-left: 0;
+}
+.contact .dl-horizontal dd {
+    margin-left: 0;
+    float: left;
+}
+.contact .thumbnail {
+  padding: 0;
+  margin: 0 0 1em 0;
+  border: 0;
+  float: left;
+}
+.contact-emailto {
+    font-weight: bold;
+}
+.contact-category .list-title {
+    font-weight: bold;
+    float: left;
+    width: 45%;
+}
+.category.list-striped {
+  margin-top: 1em;
+}
+.category.list-striped li {
+    background: 0;
+    margin: 0;
+    padding-left: 0;
+}
+/* weergave praktijknieuws huisartsen */
+.blog .items-row {
+    top: 3em;
+}
+/* verbergen van pagina aanduiding bij een artikel van meerdere pagina's */
+.article-index, .pagenavcounter {
+    display: none;
+}
+
+/* onderste modules  */
+.footer .container {
+    font-size: 0.8em;
+    margin-top: 2%;
+    padding: 1em 0;
+}
+.moduletable.span3 {
+    width: 20.8%;
+    height: 140px;
+    margin: 0 1% 0 0%;
+    padding: 0.8em;
+    color: #fff;
+}
+footer.footer .moduletable h3 {
+    font-size: 1.25em;
+}
+.container hr {
+    display: none;
+}
+.moduletable.box1 {
+    color: rgb(37, 74, 149);
+    background: rgb(203, 211, 0) url(/images/algemeen/ponsgat.png) 95% 8% no-repeat;
+    list-style-position: inside;
+}
+.moduletable.box2 {
+    background: rgb(126, 192, 182);
+}
+.moduletable.box3 {
+    background: rgb(107, 135, 194);
+}
+.moduletable.box4 {
+    background: rgb(86, 194, 218);
+}
+
+/* Sidebar */
+.well.banner-spacer {
+    display: none;
+}
+.well.banner-sidebar {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+.custom.banner-sidebar {
+    background: none repeat scroll 0 0 rgb(86, 194, 218);
+    border-radius: 1em;
+    /*box-shadow: 0.2em 0.3em 0.2em rgb(204, 204, 204);*/
+    color: rgb(255, 255, 255);
+    font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 1em 0.5em;
+    width: 65%;
+}
+/* back to Top */
+footer.footer .pull-right {
+    margin: 1% 6% 1% 0;
+    clear: both;
+    width: 100%;
+    text-align: right;
+}
+footer.footer div.container > p:last-child {
+    clear: both;
+    background: #333;
+    color: #fff;
+    width: 94%;
+        /*margin: 0 0 0 0%;*/
+        padding: 0;
+        padding-left: 1%;
+      }
+
+/* = Beezing Forms = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+  body.site.com_breezingforms {
+    border: 0;
+  }
+      div#ff_formdiv1.bfFormDiv.BfForm2 {
+        background: rgb(215,240,246);
+        padding: 15px;
+        width: 90%;
+      }
+      fieldset.bfBlock legend {
+        font-weight: bold;
+        font-size: 1.0em;
+        color: rgb(0,0,150);
+        /*padding: 4px 0;*/
+        margin-right: 0.5em;
+        float: left;
+      }
+
+/* styling van de medicijnregels */
+    #S1 legend, #S2 legend, #S3 legend, #S4 legend, #S5 legend, #S6 legend,
+    #S7 legend, #S8 legend, #S9 legend, #S10 legend {
+      width: 2%;
+      padding-bottom: 6px;
+    }
+      .BF2 div section.bfElemWrap.bfLabelLeft {
+          margin: 5px 0px 5px 0px;
+          float: left;
+          width: 100%;
+         }
+      .BF2 div section.bfElemWrap.bfLabelLeft label {
+        width: 6em;
+        float: left;
+      }
+      .BF2 div section.bfElemWrap.bfLabelLeft input {
+        width: 60%;
+        /*float: left;*/
+        font-size: 1em;
+        border: 1px solid rgb(0,0,150);
+        border-radius: 0.3em;
+        padding: 3px;
+        position: relative;
+        left: 2em;
+      }
+      .BF2 div section.bfElemWrap.bfLabelLeft select {
+        width: 12em;
+        left: 2em;
+        position: relative;
+      }
+/* de gele rollovers verwijderen */
+      .bfElemWrap.bfLabelLeft.bfRolloverBg,
+      .bfElemWrap.bfLabelTop.bfRolloverBg {
+        background: transparent !important;
+      }
+
+/* de labelgroep waarvan de inputvelden onzichtbaar worden gemaakt */
+      fieldset#bfQuickModeSection23315 input {
+        display: none;
+      }
+      fieldset#bfQuickModeSection23315 label {
+        float: left;
+        margin-right: 10%;
+      }
+/* breedte e.d. van de inputs */
+      input[placeholder='b.v. Otrivin'], input[placeholder='medicijnnaam'] {
+        border: 1px solid rgb(0,0,150);
+        width: 22%;
+        padding: 3px;
+        font-size: 1em;
+      }
+      input[placeholder=sterkte], input[placeholder='bijv. 500'],
+      input[placeholder=gebruik], input[placeholder='bijv. 2x daags'],
+      input[placeholder=aantal], input[placeholder='bijv. 30'] {
+        border: 1px solid rgb(0,0,150);
+        border-radius: 0.3em;
+        background: #fff;
+        width: 14%;
+        padding: 3px;
+        font-size: 1em;
+      }
+      .ff_elem.chzn-done {
+        border: 1px solid rgb(0,0,150);
+        width: 14%;
+        font-size: 1em;
+      }
+  /*This will change the appearance of any regular button in this form.*/
+      .BF2 button[type=button] {
+          padding: 2px 15px 2px 5px;
+          /*margin: 0px;*/
+          color: rgb(0,0,150);
+          font-weight: bold;
+          font-size: 100%;
+          background: transparent;
+          border: none;
+      }
+      .bfElemWrap.bfLabelLeft.bfRolloverBg button[value='extra regel(s) toevoegen'] {
+        border: 1px solid rgb(0,0,150) !important;
+        /*margin: 13px -1px -13px -1px;*/
+        border-radius: 0.3em;
+      }
+      button[value='extra regel(s) toevoegen'] {
+          margin: 1em 0 -2em 0;
+        }
+      button[value='verzenden >'] {
+        float: right;
+        /*margin-top: -1em;*/
+        margin-right: 121px;
+      }
+      button[value='verzenden >']:hover {
+        border: 1px solid rgb(0,0,150) !important;
+        border-radius: 0.3em;
+        margin: -1px 121px -1px -1px;
+      }
+      button[value='delrow'], button[value='reset'] {
+        display: none;
+      }
+      /* De payoff van CrossTec verwijderen */
+      div#ff_formdiv1 + div span {
+          color: lightcyan;
+          display: none;
+      }
+
+
+
+/* = 979 = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+@media (max-width: 979px) {
+  .logo-gc {
+    /*margin-bottom: 2em;*/
+  }
+  footer .container {
+    width: 98%;
+    padding: 0 0%;
+  }
+  footer.footer .pull-right {
+      margin: 1% 9.5% 1% 0;
+  }
+  footer.footer div.container > p:last-child {
+      width: 91%;
+  }
+  .moduletable.span3 {
+    width: 20%;
+    font-size: 1.2em;
+    height: 100%;
+    min-height: 148px;
+  }
+  .moduletable.box3.span3 .box3 table {
+    width: 100% !important;
+    font-size: 90%;
+    /*color: red;*/
+  }
+}
+/* = 768 = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+@media (max-width: 768px) and (min-width: 420px) {
+  /* nLevel menu voor mobiel */
+  nav#rain_main_ul {
+      /*display: block !important;*/
+  }
+  ul.nav.menu.hm, ul.nav.menu.pm {
+    /*display: none;*/
+  }
+  nav.navigation div#mobile_menu_show.menu_button.menu_icon {
+    display: none !important;
+    /*border: 1px solid red;*/
+  }
+	.body {
+    /*max-width: 800px;*/
+  }
+  div#sidebar.span3 {
+      float: left;
+      width: 25%;
+      /*border: 1px yellow solid;*/
+      /*color: yellow !important;*/
+  }
+  /*#sidebar.span3 { display: none; }*/
+
+  main#content.span6 {
+    float: left;
+    width: 65%;
+}
+div#aside {
+    /*clear: both;*/
+    float: left;
+    margin-left: 0%;
+    max-width: 35%;
+  }
+.footer .container {
+  margin-top: 0;
+    padding: 0 0%;
+    font-size: 1em;
+}
+  .moduletable.span3 {
+    float: left;
+    width: 35%;
+    margin: 2% 5%;
+    font-size: 0.8em;
+  }
+footer.footer .pull-right {
+      margin: 1% 8.5% 1% 0;
+  }
+footer.footer div.container > p:last-child {
+  width: 101%;
+  margin-left: -1%;
+  }
+}
+
+@media (max-width: 620px) {
+  .moduletable.span3 {
+    width: 40%;
+    /* margin: 2% 0.5%;*/
+  }
+  ul.nav.menu.hm li {
+    margin-bottom: 1em;
+}
+ul.nav.menu.pm li.active a {
+  width: 8em;
+  }
+  .breadcrumb {
+      margin-top: -13%;
+  }
+  .search {
+    margin-top: -8%;
+  }
+  .vlag {
+    margin-right: 56%;
+margin-top: -7%;
+  }
+}
+
+/* = = 420 = = = = = = = = = = = = 420 = = = = = = = = = = = = */
+
+@media (max-width: 420px) {
+  .body .container {
+    padding: 0.3em;
+    width: 75%;
+    margin: 4% 2%;
+  }
+  .header {
+    width: 125%;
+  }
+  .logo-gc {
+    width: 50%;
+    /*margin-left: -5%;*/
+    /*margin-top: -4%;*/
+  }
+/* Het mobiele overlay menu */
+  /* hamburger tekst */
+  #mobile_menu_show.menu_button.menu_icon::before {
+    content: "MENU";
+    float: right;
+    margin-right: 130%;
+    color: rgb(37,74,149);
+  }
+  /*hamburger button */
+  #mobile_menu_show.menu_button.menu_icon {
+    background: none;
+    float: right;
+        margin-right: -20%;
+        margin-top: -70%;
+      }
+/* de lijnen van het hamburgermenu */
+  div.navicon-line {
+    background-color: rgb(37,74,149);
+  }
+/* mobiel overlay menu */
+  #yt-off-resmenu.mm-ismenu {
+      color: #254A95;
+      background: rgba(255, 255, 255, 1);
+      font-weight: bold;
+  }
+  #yt-off-resmenu.mm-ismenu a {
+    font-size: 120%;
+  }
+/* truc om de chevrons over de hele menubreedte te laten verwijzen;  */
+    .mm-list.mm-panel a.mm-subopen {
+      background: transparent;
+      width: 100%;
+      }
+/* kleur van menu-titels-met-een-submenu */
+   /*.mm-list>li>a+a { color: rgba(0,255,255,1); }*/
+
+/* css-style chevron sub-menu terug-teken < */
+  div#yt-off-resmenu.mm-menu .mm-list>li>a.mm-subclose:before {
+    color: #254A95;
+     border-color: #254A95;
+     border-width: 3px;
+   }
+/* css-style chevron submenu vooruit-teken > */
+  div#yt-off-resmenu.mm-menu .mm-list>li>a.mm-subopen:after {
+     border-color: #254A95;
+     border-width: 3px;
+  }
+/* kleur van terug-menu */
+  div#yt-off-resmenu.mm-menu .mm-list>li>a.mm-subclose {
+    color: #254A95;
+    background-color: rgb(203, 211, 0);
+  }
+/* sluitblokje X iets verplaatsen */
+#mobile_menu_hide.close_button {
+    margin-top: 15px;
+      margin-right: 5px;
+}
+/* het hele menu iets omlaag */
+div#yt-off-resmenu.mm-menu>.mm-panel.mm-opened {
+    margin-top: 20px;
+}
+/* bovenste menu's iets minder hoog */
+div#yt-off-resmenu ul li.first_li {
+    margin-top: -20px;
+}
+div#yt-off-resmenu ul li.mm-subtitle.first_li {
+    margin-top: -40px;
+}
+/* einde mobiel overlay menu */
+
+  .breadcrumb {
+      margin-top: 6%;
+      margin-left: 2%;
+      float: left;
+      text-align: left;
+      width: 95%;
+    }
+  .search {  display: none;
+   margin-top: -55%;
+    margin-right: -3%;
+    position: relative;
+}
+.search .inputbox {  width: 55%;
+}
+  .vlag {    display: none;
+    margin-right: 4%;
+    margin-top: -15%;
+      }
+.naambeeld { display: none; }
+.menubeeld { display: none;}
+ul.nav.menu.hm, ul.nav.menu.pm {
+  display: none;
+}
+.row-fluid {
+  margin-top: -5%;
+  width: 100%;
+}
+#sidebar.span3 { display: none; }
+main#content.span6 { width: 120%;}
+main#content h1, .page-header h1 {
+  margin-bottom: -1em;
+}
+main#content .page-header h2 {
+    margin-bottom: -0.5em;
+  }
+/* module boxen onderin */
+  .moduletable.span3 {
+    width: 60%;
+    margin: 0.2em 20%;
+}
+.footer .container {
+     padding: 0 ;
+}
+footer.footer div.container > p:last-child {
+    width: 100%;
+}
+
+}
+
+/* = = 420 = = = = = = = = = = = = = = = = = = = = = = = = */
+
+@media (max-width: 420px) {
+  .moduletable.span3 {
+    width: 80%;
+    margin: 0.2em 10%;
+
+
+}
+    /*.breadcrumb {  width: 100%;}*/
+    /*.breadcrumb li.active {display: none;}*/
+    /* tekst "U bevindt zich hier" en laatste kruimel weglaten? */

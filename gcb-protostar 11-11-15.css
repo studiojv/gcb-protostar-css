@@ -1,0 +1,428 @@
+/* 11-11-15 - 0903-gcb-2015-protostar/templates/protostar/gcb-protostar */
+/* donkerblauw =rgb(37,74,149) = #254A95 */
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video, .navigation {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.moduletable, .site.com_content, .site.com_contact {
+    padding: 0;
+}
+.container {
+    background: url(/images/algemeen/gcb-logo-bg.png) 630px 320px no-repeat ;
+}
+a {
+}
+a:hover, a:active, a:focus {
+    background: rgb(225,233,244);
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: rgb(37,74,149);
+}
+
+body .body {
+/*     color: #f33; */
+}
+body.site.com_content, body.site.com_contact {
+    border-top: 0;
+}
+.body .container {
+    border: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+.brand, .site-title {
+    display: none;
+}
+
+/* Ik wil dat de header verkleint bij smaller maken van het venster */
+/* Header 100% en beelden geschaald en relative pos eruit, met margins werken */
+.header {
+    margin-bottom: 5%;
+/*     width: 100%; */
+}
+/* header-search staat op 100% om het logo helemaal links te kunne plaatsen */
+.header-search {
+    width: 100%;
+/*     float: left; */
+}
+
+/* nLevel menu niet in desktop */
+nav#rain_main_ul {
+    display: none !important;
+}
+.logo-gc {
+    /* margin-bottom: -2em; */
+    /* height: 136px; */
+    width: 19%;
+}
+.breadcrumb {
+    margin-top: -8%;
+    margin-right: 6.5%;
+    font-size: 0.7em;
+    float: right;
+    width: 70%;
+    text-align: right;
+    padding: 0 0;
+}
+.breadcrumb, .breadcrumb li, .breadcrumb li.active {
+    background: none;
+    text-shadow: none;
+  }
+.breadcrumb li, .breadcrumb > li > a, .breadcrumb li.active {
+    /*margin: 0 0;*/
+}
+.search {
+    margin-top: -4%;
+    margin-right: 6.5%;
+    float: right;
+}
+.search .inputbox {
+    border: 0;
+    border-radius: 0;
+    /*-webkit-border-radius: 0 0;*/
+    box-shadow: 0 0;
+    /*-webkit-box-shadow: 0 0;*/
+    -webkit-appearance: none;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ddd;
+    width: 62%;
+}
+.search .inputbox {
+  float: left;
+}
+.search form button {
+    border: none;
+    border-radius: 0;
+    background: rgb(107,135,194);
+    font-weight: bold;
+}
+.search form button:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+    background-color: rgb(0,0,150) ;
+}
+.vlag {
+    float: right;
+    margin-right: 43%;
+    margin-top: -3%;
+}
+
+.menubeeld {
+    width: 69.7%;
+    margin-left: 23.9%;
+    margin-top: 0%;
+}
+
+.naambeeld {
+    margin-left: 9%;
+    width: 67%;
+    margin-top: -14%;
+}
+
+/* HOODFMENU (hm) */
+.navigation {
+    /*position: relative;*/
+    /*top: -13em;*/
+    /*left: 0.3em;*/
+}
+ul.nav.menu.hm {
+    font-size: 0.84em;
+    font-weight: bold;
+}
+ul.nav.menu.hm li {
+    background: 0;
+    float: left;
+    margin: 0 2.5em 0 0 ;
+}
+ul.nav.menu.hm li a {
+    color: rgb(0,0,150);
+}
+ul.nav.menu.hm li.active a {
+    color: rgb(64,185,212);
+    border-bottom: 4px solid rgb(64,185,212);
+}
+ul.nav.menu.hm li a:hover {
+    background: 0;
+    border-bottom: 4px solid rgb(64,185,212);
+}
+
+/* PRAKTIJKMENU (pm) */
+ul.nav.menu.pm li a {
+    background: 0;
+    margin: 1em 0;
+}
+ul.nav.menu.pm li a {
+    color: rgb(64,185,212);
+    padding: 0.15em 0;
+    padding-left: 0.4em;
+}
+ul.nav.menu.pm li.active {
+    background: none;
+}
+ul.nav.menu.pm li a:hover, ul.nav.menu.pm li ul.nav-child li a:hover {
+    background: rgb(225,233,244);
+    width: 11em;
+}
+ul.nav.menu.pm li.active a {
+    background: rgb(225,233,244) url(/templates/gcb/images/gtr.png) 0.45em 0.45em no-repeat;
+    color: rgb(64,185,212);
+    padding: 0.15em 0;
+    padding-left: 2em;
+    width: 10em;
+}
+ul.nav.menu.pm li ul.nav-child li {
+    font-size: 1.1em;
+    padding: 0.5em 0;
+}
+ul.nav.menu.pm li ul.nav-child li a {
+    color: rgb(107, 135, 194);
+    font-weight: bold !important;
+    background: transparent;
+}
+ul.nav.menu.pm li ul.nav-child li.active a {
+    color: rgb(0, 0, 150);
+    background: url(/templates/gcb/images/gtr-rfl.png) 0.9em 0.3em no-repeat;
+    margin-left: 1.1em;
+}
+div#sidebar.span3 {
+    margin-top: -0.8em;
+    width: 22.5%;
+}
+.row-fluid {
+    font-size: 0.9em;
+    /* position: relative; */
+    /* top: -12em; */
+    margin-top: 5%;
+    float: left;
+  }
+
+main#content h1, .page-header h1 {
+    font-size: 1.2em;
+    color: rgb(64,185,212);
+    font-weight: normal;
+}
+main#content .page-header {
+    border-bottom: 0;
+}
+main#content h2, .headline2, .page-header h2 {
+    display: block;
+    color: rgb(37, 74, 149);
+    font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+main#content {
+    line-height: 1.5em;
+    margin-left: 1.6%;
+}
+main#content ul {
+    list-style-position: inside;
+}
+main#content .item-page h3 {
+    color: rgb(64,185,212);
+}
+/* kopjes en tekst in contactlijst fysio medewerkers */
+main#content .contact .page-header h2 {
+    margin: 0.5em 0;
+}
+.contact h3 {
+    display: none;
+}
+.contact-miscinfo .dl-horizontal dd {
+    margin-left: 0;
+}
+.contact .dl-horizontal dd {
+    margin-left: 0;
+    float: left;
+}
+.contact .thumbnail {
+  padding: 0;
+  margin: 0 0 1em 0;
+  border: 0;
+  float: left;
+}
+.contact-emailto {
+    font-weight: bold;
+}
+.contact-category .list-title {
+    font-weight: bold;
+    float: left;
+    width: 45%;
+}
+.category.list-striped {
+  margin-top: 1em;
+}
+.category.list-striped li {
+    background: 0;
+    margin: 0;
+    padding-left: 0;
+}
+/* weergave praktijknieuws huisartsen */
+.blog .items-row {
+    top: 3em;
+}
+/* verbergen van pagina aanduiding bij een artikel van meerdere pagina's */
+.article-index, .pagenavcounter {
+    display: none;
+}
+
+/* onderste modules  */
+.footer .container {
+    font-size: 0.8em;
+}
+.moduletable.span3 {
+    width: 20.8%;
+    height: 140px;
+    margin: 0 1.6em 0 -1%;
+    padding: 0.8em;
+    color: #fff;
+}
+footer.footer .moduletable h3 {
+    font-size: 1.25em;
+}
+.container hr {
+    display: none;
+}
+.moduletable.box1 {
+    color: rgb(37, 74, 149);
+    background: rgb(203, 211, 0) url(/images/algemeen/ponsgat.png) 185px 6px no-repeat;
+    list-style-position: inside;
+}
+.moduletable.box2 {
+    background: rgb(126, 192, 182);
+}
+.moduletable.box3 {
+    background: rgb(107, 135, 194);
+}
+.moduletable.box4 {
+    background: rgb(86, 194, 218);
+}
+
+/* Sidebar */
+.well.banner-spacer {
+    display: none;
+}
+.well.banner-sidebar {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+.custom.banner-sidebar {
+    background: none repeat scroll 0 0 rgb(86, 194, 218);
+    border-radius: 1em;
+    /*box-shadow: 0.2em 0.3em 0.2em rgb(204, 204, 204);*/
+    color: rgb(255, 255, 255);
+    font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 1em 0.5em;
+    width: 65%;
+}
+footer.footer div.container > p:last-child {
+    clear: both;
+    background: #333;
+    color: #fff;
+    width: 97%;
+    padding: 0 0.5em;
+}
+footer.footer .pull-right {
+    float: right;
+    margin-right: 2.4em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+@media (max-width: 979px) {
+  .logo-gc {
+    /*margin-bottom: 2em;*/
+  }
+  .footer .container {
+    width: 94.7%;
+  }
+  .moduletable.span3 {
+    width: 20%;
+    font-size: 98%;
+    height: 100%;
+    min-height: 148px;
+  }
+  .moduletable.box3.span3 .box3 table {
+    width: 100% !important;
+    font-size: 90%;
+    /*color: red;*/
+  }
+}
+/*=================================================================*/
+@media (max-width: 768px) {
+  /* nLevel menu voor mobiel */
+  nav#rain_main_ul {
+      /*display: block !important;*/
+  }
+  ul.nav.menu.hm, ul.nav.menu.pm {
+    /*display: none;*/
+  }
+  nav.navigation .menu_button.menu_icon {
+    display: none !important;
+    /*border: 1px solid red;*/
+  }
+	.body {
+    /*max-width: 800px;*/
+  }
+  div#sidebar.span3 {
+      float: left;
+      width: 25%;
+      border: 1px yellow solid;
+      color: yellow !important;
+  }
+  main#content.span6 {
+    float: left;
+    width: 65%;
+}
+    div#aside {
+    clear: both;
+    float: none;
+    margin-left: 25%;
+  }
+  .moduletable.span3 {
+    float: left;
+  }
+  .header-search {
+    /*width: 77.430556%;*/
+  }
+  .menubeeld, .naambeeld {
+    /*width: 77.430556%;*/
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .search {
+    margin-top: -4%;
+    margin-right: 5%;
+    float: right;
+}
+.search .inputbox {
+    width: 55%;
+}
+  .vlag {
+    float: right;
+    margin-right: 64.5%;
+    margin-top: -4%;
+    margin-bottom: 1%;
+    width: 15%;
+}
+    /*.breadcrumb {  width: 100%;}*/
+    /*.breadcrumb li.active {display: none;}*/
+    /* tekst "U bevindt zich hier" en laatste kruimel weglaten? */
+
+
+}
