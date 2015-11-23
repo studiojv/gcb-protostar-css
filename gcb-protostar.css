@@ -566,7 +566,7 @@ margin-top: -7%;
     margin: 4% 2%;
   }
   .header {
-    width: 125%;
+    width: 100%;
   }
   .logo-gc {
     width: 50%;
@@ -680,8 +680,8 @@ main#content .page-header h2 {
   }
 /* module boxen onderin */
   .moduletable.span3 {
-    width: 60%;
-    margin: 0.2em 20%;
+    width: 80%;
+    margin: 0.5em 10%;
 }
 .footer .container {
      padding: 0 ;
@@ -689,18 +689,50 @@ main#content .page-header h2 {
 footer.footer div.container > p:last-child {
     width: 100%;
 }
+/* formulier mobiel */
+body.site.com_breezingforms {
+    padding: 0;
+}
+.body .container {
+    width: 80%;
+  }
+  div#ff_formdiv1.bfFormDiv.BfForm2 {
+          margin: 0 -15px;
+      width: 113%;
+  }
+  .BF2 div section.bfElemWrap.bfLabelLeft label {
+    width: 100%;
+    margin: 0.1em 0.1em;
+}
+.BF2 div section.bfElemWrap.bfLabelLeft input,
+.BF2 div section.bfElemWrap.bfLabelLeft select {
+  left: 0;
+  width: 100%;
+  }
+
+input[placeholder='b.v. Otrivin'], input[placeholder='medicijnnaam'],
+input[placeholder=sterkte], input[placeholder='bijv. 500'], input[placeholder=gebruik], input[placeholder='bijv. 2x daags'], input[placeholder=aantal], input[placeholder='bijv. 30'],
+.ff_elem.chzn-done {
+  width: 100%;
+  }
+.BF2 button[type=button] {
+  float: left;
+  border: 1px solid rgb(0,0,150);
+  border-radius: 0.3em;
+  width: 100%;
+    margin: 1em 0;
+}
+  fieldset#bfQuickModeSection23315 label {
+      display: none;
+    }
+
+input[placeholder='DD-MM-JJJJ'] {
+      width: 100% !important;
+    }
 
 }
 
 /* = = 420 = = = = = = = = = = = = = = = = = = = = = = = = */
-
-@media (max-width: 420px) {
-  .moduletable.span3 {
-    width: 80%;
-    margin: 0.2em 10%;
-
-
-}
     /*.breadcrumb {  width: 100%;}*/
     /*.breadcrumb li.active {display: none;}*/
     /* tekst "U bevindt zich hier" en laatste kruimel weglaten? */
