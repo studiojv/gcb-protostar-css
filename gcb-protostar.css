@@ -346,7 +346,6 @@ footer.footer div.container > p:last-child {
         float: left;
       }
 
-/* styling van de medicijnregels */
     #S1 legend, #S2 legend, #S3 legend, #S4 legend, #S5 legend, #S6 legend,
     #S7 legend, #S8 legend, #S9 legend, #S10 legend {
       width: 2%;
@@ -382,6 +381,11 @@ footer.footer div.container > p:last-child {
         background: transparent !important;
       }
 
+/* tijdelijk de labelgroep verdwijnen */
+    fieldset#bfQuickModeSection23315.bfBlock {
+      display: none;
+    }
+
 /* de labelgroep waarvan de inputvelden onzichtbaar worden gemaakt */
       fieldset#bfQuickModeSection23315 input {
         display: none;
@@ -390,12 +394,19 @@ footer.footer div.container > p:last-child {
         float: left;
         margin-right: 10%;
       }
+      /* styling van de medicijnregels */
 /* breedte e.d. van de inputs */
       input[placeholder='b.v. Otrivin'], input[placeholder='medicijnnaam'] {
         border: 1px solid rgb(0,0,150);
         width: 22%;
         padding: 3px;
         font-size: 1em;
+        float: left;
+      }
+      label#bfLabel170, label#bfLabel171, label#bfLabel172, label#bfLabel173 {
+        color: red;
+        float: left;
+        margin-top: -1.3em;
       }
       input[placeholder=sterkte], input[placeholder='bijv. 500'],
       input[placeholder=gebruik], input[placeholder='bijv. 2x daags'],
@@ -406,11 +417,21 @@ footer.footer div.container > p:last-child {
         width: 14%;
         padding: 3px;
         font-size: 1em;
+        float: left;
       }
       .ff_elem.chzn-done {
         border: 1px solid rgb(0,0,150);
         width: 14%;
         font-size: 1em;
+        float: left;
+      }
+      input[placeholder='bijv. 500'] {
+        /*margin-left: -7em;*/
+      }
+      input[placeholder='bijv. 2x daags'] {
+      }
+      select#ff_elem171 {
+        /*margin-left: -4.7em;*/
       }
   /*This will change the appearance of any regular button in this form.*/
       .BF2 button[type=button] {
@@ -585,8 +606,8 @@ margin-top: -7%;
   #mobile_menu_show.menu_button.menu_icon {
     background: none;
     float: right;
-        margin-right: -20%;
-        margin-top: -70%;
+        margin-right: 0%;
+        margin-top: -60%;
       }
 /* de lijnen van het hamburgermenu */
   div.navicon-line {
@@ -690,15 +711,17 @@ footer.footer div.container > p:last-child {
     width: 100%;
 }
 /* formulier mobiel */
+
 body.site.com_breezingforms {
     padding: 0;
 }
 .body .container {
-    width: 80%;
+    width: 97%;
+    margin: 0;
   }
   div#ff_formdiv1.bfFormDiv.BfForm2 {
-          margin: 0 -15px;
-      width: 113%;
+          margin: 0 0;
+      width: 90%;
   }
   .BF2 div section.bfElemWrap.bfLabelLeft label {
     width: 100%;
@@ -715,6 +738,15 @@ input[placeholder=sterkte], input[placeholder='bijv. 500'], input[placeholder=ge
 .ff_elem.chzn-done {
   width: 100%;
   }
+label#bfLabel170, label#bfLabel171, label#bfLabel172, label#bfLabel173 {
+    margin-top:0;
+  }
+  label#bfLabel169 {
+    clear: both;
+    margin-left: -0.2em;
+    margin-top: -1em;
+    float: left;
+    }
 .BF2 button[type=button] {
   float: left;
   border: 1px solid rgb(0,0,150);
