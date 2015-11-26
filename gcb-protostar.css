@@ -332,7 +332,7 @@ footer.footer div.container > p:last-child {
   body.site.com_breezingforms {
     border: 0;
   }
-      div#ff_formdiv1.bfFormDiv.BfForm2 {
+      div#ff_formdiv1.bfFormDiv.BfForm2, div#ff_formdiv21.bfFormDiv.BfForm2 {
         background: rgb(215,240,246);
         padding: 15px;
         width: 90%;
@@ -360,7 +360,8 @@ footer.footer div.container > p:last-child {
         width: 6em;
         float: left;
       }
-      .BF2 div section.bfElemWrap.bfLabelLeft input {
+      .BF2 div section.bfElemWrap.bfLabelLeft input,
+      .BF2 div section.bfElemWrap.bfLabelLeft select {
         width: 60%;
         /*float: left;*/
         font-size: 1em;
@@ -371,9 +372,6 @@ footer.footer div.container > p:last-child {
         left: 2em;
       }
       .BF2 div section.bfElemWrap.bfLabelLeft select {
-        width: 12em;
-        left: 2em;
-        position: relative;
       }
 /* de gele rollovers verwijderen */
       .bfElemWrap.bfLabelLeft.bfRolloverBg,
@@ -385,7 +383,6 @@ footer.footer div.container > p:last-child {
     fieldset#bfQuickModeSection23315.bfBlock {
       display: none;
     }
-
 /* de labelgroep waarvan de inputvelden onzichtbaar worden gemaakt */
       fieldset#bfQuickModeSection23315 input {
         display: none;
@@ -394,8 +391,11 @@ footer.footer div.container > p:last-child {
         float: left;
         margin-right: 10%;
       }
-      /* styling van de medicijnregels */
-/* breedte e.d. van de inputs */
+/* styling van de medicijnregels */
+      fieldset#S1 {
+    margin-top: 2em;
+}
+  /* breedte e.d. van de inputs */
       input[placeholder='b.v. Otrivin'], input[placeholder='medicijnnaam'] {
         border: 1px solid rgb(0,0,150);
         width: 22%;
@@ -403,10 +403,11 @@ footer.footer div.container > p:last-child {
         font-size: 1em;
         float: left;
       }
-      label#bfLabel170, label#bfLabel171, label#bfLabel172, label#bfLabel173 {
-        color: red;
+      label#bfLabel170, label#bfLabel171, label#bfLabel172, label#bfLabel173,
+      label#bfLabel938, label#bfLabel939, label#bfLabel940, label#bfLabel941, label#bfLabel942 {
+        color: rgb(37,74,149);
         float: left;
-        margin-top: -1.3em;
+        margin-top: -1.5em;
       }
       input[placeholder=sterkte], input[placeholder='bijv. 500'],
       input[placeholder=gebruik], input[placeholder='bijv. 2x daags'],
@@ -421,7 +422,7 @@ footer.footer div.container > p:last-child {
       }
       .ff_elem.chzn-done {
         border: 1px solid rgb(0,0,150);
-        width: 14%;
+        width: 22%;
         font-size: 1em;
         float: left;
       }
@@ -465,12 +466,16 @@ footer.footer div.container > p:last-child {
         display: none;
       }
       /* De payoff van CrossTec verwijderen */
-      div#ff_formdiv1 + div span {
+      div#ff_formdiv1 + div span,
+       {
           color: lightcyan;
           display: none;
       }
-
-
+/* geen lelijke blauwe randen om focus elementen
+** -webkit-focus-ring-color auto 5px ** weghalen */
+      :focus, select:focus {
+          outline: none;
+      }
 
 /* = 979 = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
@@ -519,12 +524,13 @@ footer.footer div.container > p:last-child {
   }
   div#sidebar.span3 {
       float: left;
-      width: 25%;
+      width: 22%;
       /*border: 1px yellow solid;*/
       /*color: yellow !important;*/
   }
-  /*#sidebar.span3 { display: none; }*/
-
+  ul.nav.menu.hm li {
+      margin-right: 2em;
+    }
   main#content.span6 {
     float: left;
     width: 65%;
@@ -719,9 +725,10 @@ body.site.com_breezingforms {
     width: 97%;
     margin: 0;
   }
-  div#ff_formdiv1.bfFormDiv.BfForm2 {
+  div#ff_formdiv1.bfFormDiv.BfForm2, div#ff_formdiv21.bfFormDiv.BfForm2  {
           margin: 0 0;
-      width: 90%;
+      width: 87%;
+      /*background: rgb(215,240,246);*/
   }
   .BF2 div section.bfElemWrap.bfLabelLeft label {
     width: 100%;
@@ -738,10 +745,11 @@ input[placeholder=sterkte], input[placeholder='bijv. 500'], input[placeholder=ge
 .ff_elem.chzn-done {
   width: 100%;
   }
-label#bfLabel170, label#bfLabel171, label#bfLabel172, label#bfLabel173 {
+label#bfLabel170, label#bfLabel171, label#bfLabel172, label#bfLabel173,
+label#bfLabel938, label#bfLabel939, label#bfLabel940, label#bfLabel941, label#bfLabel942 {
     margin-top:0;
   }
-  label#bfLabel169 {
+  label#bfLabel938 {
     clear: both;
     margin-left: -0.2em;
     margin-top: -1em;
