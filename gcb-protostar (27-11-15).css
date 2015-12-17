@@ -17,9 +17,7 @@ tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, 
 .container {
     background: url(/images/algemeen/gcb-logo-bg.png) 630px 320px no-repeat ;
 }
-p {
-  font-size: 93.75% ;
-  /* =13.5px (97.2222222216%=14px) */
+a {
 }
 a:hover, a:active, a:focus {
     background: rgb(225,233,244);
@@ -59,7 +57,7 @@ nav#rain_main_ul {
     width: 19%;
 }
 .breadcrumb {
-    margin-top: -9%;
+    margin-top: -8%;
     margin-right: 6.5%;
     font-size: 0.7em;
     float: right;
@@ -70,10 +68,9 @@ nav#rain_main_ul {
 .breadcrumb, .breadcrumb li, .breadcrumb li.active {
     background: none;
     text-shadow: none;
-    color: #555;
   }
 .search {
-    margin-top: -6%;
+    margin-top: -4%;
     margin-right: 6.5%;
     float: right;
 }
@@ -85,9 +82,7 @@ nav#rain_main_ul {
     -webkit-appearance: none;
     border-bottom: 1px solid #ccc;
     border-right: 1px solid #ddd;
-    padding: 0.2em 0;
-    margin: 0.3em 0;
-    /*width: 62%;*/
+    width: 62%;
 }
 .search .inputbox {
   float: left;
@@ -97,8 +92,6 @@ nav#rain_main_ul {
     border-radius: 0;
     background: rgb(107,135,194);
     font-weight: bold;
-    padding: 0.2em 0.8em;
-    margin: 0 0 -0.8em 0.8em;
 }
 .search form button:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
     background-color: rgb(0,0,150) ;
@@ -106,20 +99,19 @@ nav#rain_main_ul {
 .vlag {
     float: right;
     margin-right: 43%;
-    margin-top: -5%;
+    margin-top: -3%;
 }
 
 .menubeeld {
     width: 69.7%;
     margin-left: 23.9%;
-    margin-top: -1%;
+    margin-top: 0%;
 }
 
 .naambeeld {
     margin-left: 9%;
-/* Dit is nodig om de afbeelding te laten schalen in een kleiner venster: */
-    width: 69.8%;
-    margin-top: -15%;
+    width: 67%;
+    margin-top: -14%;
 }
 
 /* HOODFMENU (hm) */
@@ -128,7 +120,6 @@ nav#rain_main_ul {
 ul.nav.menu.hm {
     font-size: 0.84em;
     font-weight: bold;
-    margin-top: 4em;
 }
 ul.nav.menu.hm li {
     background: 0;
@@ -199,7 +190,6 @@ main#content h1, .page-header h1 {
     font-size: 1.2em;
     color: rgb(64,185,212);
     font-weight: normal;
-    margin-top: -0.2em;
 }
 main#content .page-header {
     border-bottom: 0;
@@ -209,9 +199,8 @@ main#content h2, .headline2, .page-header h2 {
     color: rgb(37, 74, 149);
     font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size:  115.7407407407408%; /* 1.1574074em */
-    margin-bottom: 0.3em;
-    margin-top: 0.2em;
+    font-size: 1.3em;
+    margin-bottom: 1em;
 }
 main#content {
     line-height: 1.5em;
@@ -271,7 +260,7 @@ main#content .contact .page-header h2 {
 /* onderste modules  */
 .footer .container {
     font-size: 0.8em;
-    /*margin-top: 2%;*/
+    margin-top: 2%;
     padding: 1em 0;
 }
 .moduletable.span3 {
@@ -333,27 +322,11 @@ footer.footer div.container > p:last-child {
     background: #333;
     color: #fff;
     width: 94%;
-    padding: 0 0 0 1%;
+        /*margin: 0 0 0 0%;*/
+        padding: 0;
+        padding-left: 1%;
       }
-.voetregel {
-        float: right;
-        margin: 3em 4.3em -5em 0;
-      }
-.voetregel p {
-  color: #fff;
-  font-size: 0.8em;
-}
-.voetregel p a {
-    font-size: 100%;
-    color: #fff;
-}
-.voetregel p a:hover {
-    background: none;
-    text-decoration: underline;
-  }
-footer.footer div.container > p:last-child::after {
-  /*content: "Ontwerp & Realisatie: Diet Rademaker Grafisch Ontwerp / Studio Velmans";*/
-}
+
 /* = Beezing Forms = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
   body.site.com_breezingforms {
@@ -365,24 +338,15 @@ footer.footer div.container > p:last-child::after {
         width: 90%;
       }
       .BfDiv-fysio {
-        background: rgba(200,240,246,0.5);
+        background: rgb(215,240,246);
         padding: 15px 5px 15px 10px;
         width: 100%;
       }
-      .BfForm-fysio .bfPageIntro {
-        background: rgba(255,255,255,0.5);
-        padding: 0.6em 0 1em 0.1em;
-        margin: -1.1em -1em 0 -0.7em;
-          margin-bottom: 1em;
-      }
-      fieldset {
-          margin-top: 0;
-          margin-bottom: -0.8em;
-  }
       fieldset.bfBlock legend {
         font-weight: bold;
         font-size: 1.0em;
         color: rgb(0,0,150);
+        /*padding: 4px 0;*/
         margin-right: 0.5em;
         float: left;
       }
@@ -394,7 +358,7 @@ footer.footer div.container > p:last-child::after {
     }
       .BF2 div section.bfElemWrap.bfLabelLeft,
       .BfForm-fysio .bfElemWrap.bfLabelLeft /* Formulier Fysio */ {
-          margin: 0.5em 0px -0.7em 0px;
+          margin: 5px 0px 5px 0px;
           float: left;
           width: 100%;
          }
@@ -419,7 +383,6 @@ footer.footer div.container > p:last-child::after {
         left: 2em;
       }
       .BF2 div section.bfElemWrap.bfLabelLeft select {
-        width: 31%
       }
 /* de gele rollovers verwijderen */
       .bfElemWrap.bfLabelLeft.bfRolloverBg,
@@ -441,7 +404,7 @@ footer.footer div.container > p:last-child::after {
       }
 /* styling van de medicijnregels */
       fieldset#S1 {
-    margin-top: 3em;
+    margin-top: 2em;
 }
   /* breedte e.d. van de inputs */
       input[placeholder='b.v. Otrivin'], input[placeholder='medicijnnaam'] {
@@ -516,17 +479,11 @@ footer.footer div.container > p:last-child::after {
       }
       .BF2 button[value='extra regel(s) toevoegen'] {
           float: left;
-          margin: 1em;
+          margin: 23px 0 -23px 0;
            }
-
-      .BfForm-fysio .bfSubmitButton {
-          margin-top: 2.2em;
-          margin-right: 0.2em;
-}
-      .BfForm-fysio .bfCancelButton {
+      .bfCancelButton {
                float: left;
-               margin-top: 1em;
-                   margin-left: -0.4em;
+               margin: 0;
                 }
       button[value='delrow'], button[value='reset'] {
         display: none;
@@ -556,7 +513,7 @@ footer.footer div.container > p:last-child::after {
 }
 */
 
-/* = @media 979 = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+/* = 979 = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 @media (max-width: 979px) {
   .logo-gc {
@@ -584,21 +541,15 @@ footer.footer div.container > p:last-child::after {
     /*color: red;*/
   }
 }
-/* = @media 768 = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+/* = 768 = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 420px) {
   /* nLevel menu voor mobiel */
-    nav#rain_main_ul {
+  nav#rain_main_ul {
       /*display: block !important;*/
   }
-  .navbar .btn-navbar {
-    display: none;
-  }
-  .nav-collapse, .nav-collapse.collapse {
-    overflow: visible;
-  }
   ul.nav.menu.hm, ul.nav.menu.pm {
-    /*display: block;*/
+    /*display: none;*/
   }
   nav.navigation div#mobile_menu_show.menu_button.menu_icon {
     display: none !important;
@@ -614,42 +565,42 @@ footer.footer div.container > p:last-child::after {
       /*color: yellow !important;*/
   }
   ul.nav.menu.hm li {
-      margin-right: 0.1em;
-  }
+      margin-right: 2em;
+    }
   main#content.span6 {
     float: left;
     width: 65%;
-  }
-  div#aside {
+}
+div#aside {
     /*clear: both;*/
     float: left;
     margin-left: 0%;
     max-width: 35%;
   }
-  .footer .container {
+.footer .container {
   margin-top: 0;
     padding: 0 0%;
     font-size: 1em;
-  }
+}
   .moduletable.span3 {
     float: left;
     width: 35%;
     margin: 2% 5%;
     font-size: 0.8em;
   }
-  footer.footer .pull-right {
+footer.footer .pull-right {
       margin: 1% 8.5% 1% 0;
   }
-  footer.footer div.container > p:last-child {
+footer.footer div.container > p:last-child {
   width: 101%;
   margin-left: -1%;
   }
 }
-/* = = @media 620 = = = = = = = = = = = = = = = = = = = = = = = = */
 
 @media (max-width: 620px) {
-  /*.moduletable.span3 {
+  .moduletable.span3 {
     width: 40%;
+    /* margin: 2% 0.5%;*/
   }
   ul.nav.menu.hm li {
     margin-bottom: 1em;
@@ -666,14 +617,15 @@ ul.nav.menu.pm li.active a {
   .vlag {
     margin-right: 56%;
 margin-top: -7%;
-  }*/
+  }
 }
 
-/* = = @media 568 = = = = = = = = = = = = = = = = = = = = = = = = */
-@media (max-width: 568px) {
+/* = = 420 = = = = = = = = = = = = 420 = = = = = = = = = = = = */
+
+@media (max-width: 420px) {
   .body .container {
     padding: 0.3em;
-    width: 95%;
+    width: 75%;
     margin: 4% 2%;
   }
   .header {
@@ -681,235 +633,194 @@ margin-top: -7%;
   }
   .logo-gc {
     width: 50%;
-  }
-  nav.navigation div#mobile_menu_show.menu_button.menu_icon {
-    display: block !important;
-  }
-  .nav-collapse {
-    overflow: visible;
-  }
-  /* Protostar hamburger 3.4.5 verbergen */
-  .btn.btn-navbar {
-    display: none;
+    /*margin-left: -5%;*/
+    /*margin-top: -4%;*/
   }
 
-  /* mijn hamburger button */
-  #mobile_menu_show.menu_button.menu_icon {
+/* Protostar hamburger 3.4.5 */
+.btn.btn-navbar {
+    position: absolute;
+    top: 42px;
+    left: 210px;
     background: none;
-    float: right;
-    margin-right: 5%;
-    margin-top: -35%;
-  }
-  /* de lijnen van het hamburgermenu */
-  div.navicon-line {
-    background-color: rgb(37,74,149);
-  }
-  /* mijn hamburger tekst */
+    border: none;
+    width: 80px;
+}
+
+/* Het mobiele overlay menu */
+  /* hamburger tekst */
   #mobile_menu_show.menu_button.menu_icon::before {
     content: "MENU";
     float: right;
-    margin-right: 125%;
+    margin-right: 130%;
     color: rgb(37,74,149);
   }
-  /* mobiel overlay menu */
+  /*hamburger button */
+  #mobile_menu_show.menu_button.menu_icon {
+    background: none;
+    float: right;
+        margin-right: 0%;
+        margin-top: -60%;
+        z-index: 100000;
+      }
+/* de lijnen van het hamburgermenu */
+  div.navicon-line {
+    background-color: rgb(37,74,149);
+  }
+/* mobiel overlay menu */
   #yt-off-resmenu.mm-ismenu {
-    color: #254A95;
-    background: rgba(240, 240, 240, 1);
-    font-weight: bold;
-    width: 100% !important;
+      color: #254A95;
+      background: rgba(255, 255, 255, 1);
+      font-weight: bold;
   }
   #yt-off-resmenu.mm-ismenu a {
     font-size: 120%;
   }
-  /* truc om de chevrons over de hele menubreedte te laten verwijzen;  */
-  .mm-list.mm-panel a.mm-subopen {
-    background: transparent;
-    width: 100%;
-  }
-  /* kleur van menu-titels-met-een-submenu */
-  /*.mm-list>li>a+a { color: rgba(0,255,255,1); }*/
+/* truc om de chevrons over de hele menubreedte te laten verwijzen;  */
+    .mm-list.mm-panel a.mm-subopen {
+      background: transparent;
+      width: 100%;
+      }
+/* kleur van menu-titels-met-een-submenu */
+   /*.mm-list>li>a+a { color: rgba(0,255,255,1); }*/
 
-  /* css-style chevron sub-menu terug-teken < */
+/* css-style chevron sub-menu terug-teken < */
   div#yt-off-resmenu.mm-menu .mm-list>li>a.mm-subclose:before {
     color: #254A95;
-    border-color: #254A95;
-    border-width: 3px;
-  }
-  /* css-style chevron submenu vooruit-teken > */
+     border-color: #254A95;
+     border-width: 3px;
+   }
+/* css-style chevron submenu vooruit-teken > */
   div#yt-off-resmenu.mm-menu .mm-list>li>a.mm-subopen:after {
-    border-color: #254A95;
-    border-width: 3px;
+     border-color: #254A95;
+     border-width: 3px;
   }
-  /* kleur van terug-menu */
+/* kleur van terug-menu */
   div#yt-off-resmenu.mm-menu .mm-list>li>a.mm-subclose {
     color: #254A95;
     background-color: rgb(203, 211, 0);
   }
-  /* sluitblokje X iets verplaatsen */
-  #mobile_menu_hide.close_button {
-    margin-top: 5px;
-    margin-right: 5px;
-  }
-  div#yt-off-resmenu {
-    /*border: 1px solid red;*/
-    /*overflow: auto;*/
-    /*padding-bottom: 10px;*/
-  }
-  /* het hele menu iets omlaag */
-  div#yt-off-resmenu.mm-menu>.mm-panel.mm-opened {
-    /*margin-top: 20px;*/
-  }
-  /* bovenste menu's iets minder hoog */
-  div#yt-off-resmenu ul li.first_li {
+/* sluitblokje X iets verplaatsen */
+#mobile_menu_hide.close_button {
+    margin-top: 15px;
+      margin-right: 5px;
+}
+/* het hele menu iets omlaag */
+div#yt-off-resmenu.mm-menu>.mm-panel.mm-opened {
+    margin-top: 20px;
+}
+/* bovenste menu's iets minder hoog */
+div#yt-off-resmenu ul li.first_li {
     margin-top: -20px;
-  }
-  div#yt-off-resmenu ul li.mm-subtitle.first_li {
+}
+div#yt-off-resmenu ul li.mm-subtitle.first_li {
     margin-top: -40px;
-  }
-  /* Laatste menu-item meer witruimte */
-  div#yt-off-resmenu ul li:last-child {
-    /*border: 1px solid red;*/
-    margin-bottom: 3em;
-  }
-
-  /* einde mobiel overlay menu */
+}
+/* einde mobiel overlay menu */
 
   .breadcrumb {
-    margin-top: 0%;
-    margin-left: 2%;
-    float: right;
-    text-align: right;
-    width: 95%;
-  }
+      margin-top: 6%;
+      margin-left: 2%;
+      float: left;
+      text-align: left;
+      width: 95%;
+    }
   .search {  display: none;
-    margin-top: -55%;
+   margin-top: -55%;
     margin-right: -3%;
     position: relative;
-  }
-  .search .inputbox {  width: 55%;
-  }
+}
+.search .inputbox {  width: 55%;
+}
   .vlag {    display: none;
     margin-right: 4%;
     margin-top: -15%;
-  }
-  .naambeeld { display: none; }
-  .menubeeld { display: none;}
-  ul.nav.menu.hm, ul.nav.menu.pm {
-    display: none;
-  }
-  .row-fluid {
-    margin-top: -5%;
-    width: 80%;
-  }
-  .well.banner-sidebar {
-    display: none;
-  }
-  main#content.span6 {
-    width: 120%;
-    margin-top: -2.5em;
-  }
-  main#content h1, .page-header h1 {
-    /*margin-bottom: -1em;*/
-  }
-  main#content .page-header h2 {
+      }
+.naambeeld { display: none; }
+.menubeeld { display: none;}
+ul.nav.menu.hm, ul.nav.menu.pm {
+  display: none;
+}
+.row-fluid {
+  margin-top: -5%;
+  width: 100%;
+}
+#sidebar.span3 { display: none; }
+main#content.span6 { width: 120%;}
+main#content h1, .page-header h1 {
+  margin-bottom: -1em;
+}
+main#content .page-header h2 {
     margin-bottom: -0.5em;
   }
-  /* module boxen onderin */
+/* module boxen onderin */
   .moduletable.span3 {
     width: 80%;
     margin: 0.5em 10%;
-  }
-  .footer .container {
-    padding: 0 ;
-  }
-  footer.footer div.container > p:last-child {
+}
+.footer .container {
+     padding: 0 ;
+}
+footer.footer div.container > p:last-child {
     width: 100%;
-  }
-  /* formulier mobiel */
+}
+/* formulier mobiel */
 
-  body.site.com_breezingforms {
+body.site.com_breezingforms {
     padding: 0;
+}
+.body .container {
+    width: 97%;
+    margin: 0;
   }
-
   div#ff_formdiv1.bfFormDiv.BfForm2, div#ff_formdiv21.bfFormDiv.BfForm2  {
-    margin-top: -1.1em;
-    width: 107%;
+          margin: 0 0;
+      width: 87%;
+      /*background: rgb(215,240,246);*/
   }
-  .bfFormDiv .BfDiv-fysio {}
-    .BfDiv-fysio {
-      width: 95%;
-    }
-    .BfForm-fysio .bfElemWrap.bfLabelLeft textarea {
-      width: 95%;
-      left: 0em;
-    }
-    .BfForm-fysio .bfElemWrap.bfLabelLeft input,
-    .BfForm-fysio .bfElemWrap.bfLabelLeft select {
-      left: 0;
-      width: 95%;
-    }
-    .BF2 div section.bfElemWrap.bfLabelLeft label {
-      width: 100%;
-      margin: 0.1em 0.1em;
-    }
-    .BF2 div section.bfElemWrap.bfLabelLeft input,
-    .BF2 div section.bfElemWrap.bfLabelLeft select {
-      left: 0;
-      width: 100%;
-    }
+  .BF2 div section.bfElemWrap.bfLabelLeft label {
+    width: 100%;
+    margin: 0.1em 0.1em;
+}
+.BF2 div section.bfElemWrap.bfLabelLeft input,
+.BF2 div section.bfElemWrap.bfLabelLeft select {
+  left: 0;
+  width: 100%;
+  }
 
-    input[placeholder='b.v. Otrivin'], input[placeholder='medicijnnaam'],
-    input[placeholder=sterkte], input[placeholder='bijv. 500'], input[placeholder=gebruik], input[placeholder='bijv. 2x daags'], input[placeholder=aantal], input[placeholder='bijv. 30'],
-    .ff_elem.chzn-done {
-      width: 100%;
+input[placeholder='b.v. Otrivin'], input[placeholder='medicijnnaam'],
+input[placeholder=sterkte], input[placeholder='bijv. 500'], input[placeholder=gebruik], input[placeholder='bijv. 2x daags'], input[placeholder=aantal], input[placeholder='bijv. 30'],
+.ff_elem.chzn-done {
+  width: 100%;
+  }
+label#bfLabel170, label#bfLabel171, label#bfLabel172, label#bfLabel173,
+label#bfLabel938, label#bfLabel939, label#bfLabel940, label#bfLabel941, label#bfLabel942 {
+    margin-top:0;
+  }
+  label#bfLabel938 {
+    clear: both;
+    margin-left: -0.2em;
+    margin-top: -1em;
+    float: left;
     }
-    label#bfLabel170, label#bfLabel171, label#bfLabel172, label#bfLabel173,
-    label#bfLabel938, label#bfLabel939, label#bfLabel940, label#bfLabel941, label#bfLabel942 {
-      margin-top:0;
-    }
-    label#bfLabel938 {
-      clear: both;
-      margin-left: -0.2em;
-      margin-top: -1em;
-      float: left;
-    }
-    .BF2 button[type=button] {
-      float: left;
-      border: 1px solid rgb(0,0,150);
-      border-radius: 0.3em;
-      width: 100%;
-      margin: 1em 0;
-    }
-    fieldset#bfQuickModeSection23315 label {
+.BF2 button[type=button] {
+  float: left;
+  border: 1px solid rgb(0,0,150);
+  border-radius: 0.3em;
+  width: 100%;
+    margin: 1em 0;
+}
+  fieldset#bfQuickModeSection23315 label {
       display: none;
     }
 
-    input[placeholder='DD-MM-JJJJ'] {
+input[placeholder='DD-MM-JJJJ'] {
       width: 100% !important;
     }
 
-    .voetregel p, .voetregel p a {
-      display: none;
-      /*color: red;*/
-    }
-
 }
 
-/* = = @media 420 = = = = = = = = = = = = 420 = = = = = = = = = = = = */
-
-@media (max-width: 420px) {
-  .breadcrumb {
-    float: left;
-    text-align: left;
-  }
-  /* hamburger tekst */
-  #mobile_menu_show.menu_button.menu_icon::before {
-    margin-right: 130%;
-  }
-  /*hamburger button */
-  #mobile_menu_show.menu_button.menu_icon {
-    margin-right: 0%;
-    margin-top: -60%;
-  }
-
-}
+/* = = 420 = = = = = = = = = = = = = = = = = = = = = = = = */
+    /*.breadcrumb {  width: 100%;}*/
+    /*.breadcrumb li.active {display: none;}*/
+    /* tekst "U bevindt zich hier" en laatste kruimel weglaten? */
