@@ -1,11 +1,5 @@
-/* 17-12-15 Joomla 3.4.6 - 0903-gcb-2015-protostar/templates/protostar/gcb-protostar */
-/* DRY-ing */
-/* donkerblauw (Reflex Blue) = rgb(37,74,149) = #254A95 */
-/* turkooisblauw (lichtblauw) = color: rgb(64,185,212)*/
-/* blauw Pantone 2718 = rgb(107,135,194)*/
-/* okergroen = rgb(203, 211, 0)*/
-/* zeegroen = rgb(126,192,182) */
-
+/* 17-12-15 Joomla 3.4.5 - 0903-gcb-2015-protostar/templates/protostar/gcb-protostar */
+/* Toevoegen FORMULIEREN */ /* donkerblauw =rgb(37,74,149) = #254A95 ++++ kleur groen = rgb(203, 211, 0) */
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
 tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video, .navigation {
     margin: 0;
@@ -27,13 +21,12 @@ p {
   font-size: 93.75% ;
   /* =13.5px (97.2222222216%=14px) */
 }
+a:hover, a:active, a:focus {
+    background: rgb(225,233,244);
+    text-decoration: none;
+}
 a:link, a:visited {
     color: rgb(37,74,149);
-}
-a:hover, a:active, a:focus {
-    color: rgb(64,185,212);
-    background: rgb(255,255,255);
-    text-decoration: none;
 }
 body.site.com_content, body.site.com_contact {
     border-top: 0;
@@ -108,7 +101,7 @@ nav#rain_main_ul {
     margin: 0 0 -0.8em 0.8em;
 }
 .search form button:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
-    /*background-color: rgb(37,74,149) ;*/
+    background-color: rgb(0,0,150) ;
 }
 .vlag {
     float: right;
@@ -129,7 +122,7 @@ nav#rain_main_ul {
     margin-top: -15%;
 }
 
-/* HOODFMENU (.hm) */
+/* HOODFMENU (hm) */
 .navigation {
 }
 ul.nav.menu.hm {
@@ -143,72 +136,65 @@ ul.nav.menu.hm li {
     margin: 0 2.5em 0 0 ;
 }
 ul.nav.menu.hm li a {
-    /*color: rgb(37,74,149);*/     /*wordt al bepaald door r.29*/
+    color: rgb(0,0,150);
 }
-ul.nav.menu.hm li.active a, ul.nav.menu.hm li a:hover {
+ul.nav.menu.hm li.active a {
     color: rgb(64,185,212);
     border-bottom: 4px solid rgb(64,185,212);
 }
 ul.nav.menu.hm li a:hover {
     background: 0;
+    border-bottom: 4px solid rgb(64,185,212);
 }
 
-/* PRAKTIJKMENU (.pm) */
-div#sidebar.span3 {
-    margin-top: -0.8em;
-    width: 23%;
-    /*border: 1px solid red;*/
-}
-ul.nav.menu.pm {
-  /*width: 80%;*/
-  /*border: 1px solid green;*/
-}
-ul.nav.menu.pm li {
-    margin: 0.5em 0;
-    padding-right: 1em;
+/* PRAKTIJKMENU (pm) */
+ul.nav.menu.pm li a {
+    background: 0;
+    margin: 1em 0;
 }
 ul.nav.menu.pm li a {
     color: rgb(64,185,212);
-    padding: 0.15em 0 0.15em 0.4em;
+    padding: 0.15em 0;
+    padding-left: 0.4em;
 }
 ul.nav.menu.pm li.active {
     background: none;
 }
+ul.nav.menu.pm li a:hover, ul.nav.menu.pm li ul.nav-child li a:hover {
+    background: rgb(225,233,244);
+    width: 11em;
+}
 ul.nav.menu.pm li.active a {
     background: rgb(225,233,244) url(/templates/gcb/images/gtr.png) 0.45em 0.45em no-repeat;
     color: rgb(64,185,212);
+    padding: 0.15em 0;
     padding-left: 2em;
-}
-ul.nav.menu.pm li a:hover,
-ul.nav.menu.pm li ul.nav-child li a:hover {
-    background: rgb(225,233,244);
+    width: 10em;
 }
 ul.nav.menu.pm li ul.nav-child li {
     font-size: 1.1em;
-    padding: 0.2em 0;
+    padding: 0.5em 0;
 }
 ul.nav.menu.pm li ul.nav-child li a {
-    color: rgb(107,135,194);
-    font-weight: bold;
+    color: rgb(107, 135, 194);
+    font-weight: bold !important;
     background: transparent;
-    padding-right: 1em;
 }
 ul.nav.menu.pm li ul.nav-child li.active a {
-    color: rgb(37,74,149);
+    color: rgb(0, 0, 150);
     background: url(/templates/gcb/images/gtr-rfl.png) 0.9em 0.3em no-repeat;
     margin-left: 1.1em;
 }
-/*Einde praktijkmenu*/
-
+div#sidebar.span3 {
+    margin-top: -0.8em;
+    width: 22.5%;
+}
 .row-fluid {
     font-size: 0.9em;
     margin-top: 3%;
     float: left;
   }
-main#content {
-      line-height: 1.5em;
-      /*margin-left: 1.6%;*/
-  }
+
 main#content h1, .page-header h1 {
     font-size: 1.2em;
     color: rgb(64,185,212);
@@ -219,14 +205,17 @@ main#content .page-header {
     border-bottom: 0;
 }
 main#content h2, .headline2, .page-header h2 {
-    color: rgb(37,74,149);
+    display: block;
+    color: rgb(37, 74, 149);
     font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size:  115.7407407407408%; /* 1.1574074em */
-/*de volgende 3 zijn speciaal voor de inline koppen*/
-    display: block;
     margin-bottom: 0.3em;
     margin-top: 0.2em;
+}
+main#content {
+    line-height: 1.5em;
+    margin-left: 1.6%;
 }
 main#content ul {
     list-style-position: inside;
@@ -234,16 +223,15 @@ main#content ul {
 main#content .item-page h3 {
     color: rgb(64,185,212);
 }
-
 /* kopjes en tekst in contactlijst fysio medewerkers */
 main#content .contact .page-header h2 {
-    /*margin: 0.5em 0;*/
+    margin: 0.5em 0;
 }
 .contact h3 {
     display: none;
 }
 .contact-miscinfo .dl-horizontal dd {
-    /*margin-left: 0;*/
+    margin-left: 0;
 }
 .contact .dl-horizontal dd {
     margin-left: 0;
@@ -268,13 +256,12 @@ main#content .contact .page-header h2 {
 }
 .category.list-striped li {
     background: 0;
-    /*margin: 0;*/
+    margin: 0;
     padding-left: 0;
 }
-
 /* weergave praktijknieuws huisartsen */
 .blog .items-row {
-    /*top: 3em;*/
+    top: 3em;
 }
 /* verbergen van pagina aanduiding bij een artikel van meerdere pagina's */
 .article-index, .pagenavcounter {
@@ -301,18 +288,18 @@ footer.footer .moduletable h3 {
     display: none;
 }
 .moduletable.box1 {
-    color: rgb(37,74,149);
-    background: rgb(203,211,0) url(/images/algemeen/ponsgat.png) 95% 8% no-repeat;
+    color: rgb(37, 74, 149);
+    background: rgb(203, 211, 0) url(/images/algemeen/ponsgat.png) 95% 8% no-repeat;
     list-style-position: inside;
 }
 .moduletable.box2 {
-    background: rgb(126,192,182);
+    background: rgb(126, 192, 182);
 }
 .moduletable.box3 {
-    background: rgb(107,135,194);
+    background: rgb(107, 135, 194);
 }
 .moduletable.box4 {
-    background: rgb(64,185,212);
+    background: rgb(86, 194, 218);
 }
 
 /* Sidebar */
@@ -325,8 +312,9 @@ footer.footer .moduletable h3 {
     box-shadow: none;
 }
 .custom.banner-sidebar {
-    background: none repeat scroll 0 0 rgb(64,185,212);
+    background: none repeat scroll 0 0 rgb(86, 194, 218);
     border-radius: 1em;
+    /*box-shadow: 0.2em 0.3em 0.2em rgb(204, 204, 204);*/
     color: rgb(255, 255, 255);
     font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -356,14 +344,16 @@ footer.footer div.container > p:last-child {
   font-size: 0.8em;
 }
 .voetregel p a {
-    /*font-size: 100%;*/
+    font-size: 100%;
     color: #fff;
 }
 .voetregel p a:hover {
     background: none;
     text-decoration: underline;
   }
-
+footer.footer div.container > p:last-child::after {
+  /*content: "Ontwerp & Realisatie: Diet Rademaker Grafisch Ontwerp / Studio Velmans";*/
+}
 /* = Beezing Forms = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
   body.site.com_breezingforms {
@@ -392,7 +382,7 @@ footer.footer div.container > p:last-child {
       fieldset.bfBlock legend {
         font-weight: bold;
         font-size: 1.0em;
-        color: rgb(37,74,149);
+        color: rgb(0,0,150);
         margin-right: 0.5em;
         float: left;
       }
@@ -422,7 +412,7 @@ footer.footer div.container > p:last-child {
         width: 70%;
         /*float: left;*/
             font-size: 0.9em;
-        border: 1px solid rgb(37,74,149);
+        border: 1px solid rgb(0,0,150);
         border-radius: 0.3em;
         padding: 3px;
         position: relative;
@@ -455,7 +445,7 @@ footer.footer div.container > p:last-child {
 }
   /* breedte e.d. van de inputs */
       input[placeholder='b.v. Otrivin'], input[placeholder='medicijnnaam'] {
-        border: 1px solid rgb(37,74,149);
+        border: 1px solid rgb(0,0,150);
         width: 22%;
         padding: 3px;
         font-size: 0.9em;
@@ -470,7 +460,7 @@ footer.footer div.container > p:last-child {
       input[placeholder=sterkte], input[placeholder='bijv. 500'],
       input[placeholder=gebruik], input[placeholder='bijv. 2x daags'],
       input[placeholder=aantal], input[placeholder='bijv. 30'] {
-        border: 1px solid rgb(37,74,149);
+        border: 1px solid rgb(0,0,150);
         border-radius: 0.3em;
         background: #fff;
         width: 14%;
@@ -479,7 +469,7 @@ footer.footer div.container > p:last-child {
         float: left;
       }
       .ff_elem.chzn-done {
-        border: 1px solid rgb(37,74,149);
+        border: 1px solid rgb(0,0,150);
         width: 22%;
         font-size: 0.9em;
         float: left;
@@ -495,14 +485,14 @@ footer.footer div.container > p:last-child {
   /*This will change the appearance of any regular button in this form.*/
       .BF2 button[value='extra regel(s) toevoegen']  {
           /*padding: 1px 5px 1px 5px;
-          color: rgb(37,74,149);
+          color: rgb(0,0,150);
           font-weight: bold;
           font-size: 0.9em;
           background: transparent;
           border: none;*/
       }
       .bfElemWrap.bfLabelLeft.bfRolloverBg button[value='extra regel(s) toevoegen'] {
-        border: 1px solid rgb(37,74,149) !important;
+        border: 1px solid rgb(0,0,150) !important;
         /*margin: 13px -1px -13px -1px;*/
         border-radius: 0.3em;
       }
@@ -511,7 +501,7 @@ footer.footer div.container > p:last-child {
       .bfCancelButton {
         float: right;
         padding: 1px 5px 1px 5px;
-        color: rgb(37,74,149);
+        color: rgb(0,0,150);
         font-weight: bold;
         font-size: 0.9em;
         background: transparent;
@@ -522,7 +512,7 @@ footer.footer div.container > p:last-child {
       .BF2 button[value='extra regel(s) toevoegen']:hover,
       .bfSubmitButton:hover,
       .bfCancelButton:hover {
-        border: 1px solid rgb(37,74,149);
+        border: 1px solid rgb(0,0,150);
       }
       .BF2 button[value='extra regel(s) toevoegen'] {
           float: left;
@@ -885,7 +875,7 @@ margin-top: -7%;
     }
     .BF2 button[type=button] {
       float: left;
-      border: 1px solid rgb(37,74,149);
+      border: 1px solid rgb(0,0,150);
       border-radius: 0.3em;
       width: 100%;
       margin: 1em 0;
