@@ -365,51 +365,46 @@ footer.footer div.container > p:last-child {
   }
 
 /* = Beezing Forms = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
-      .bf-herhaal,
+      div.bfDiv-herhaal,
       div.bfDiv-fysio {
         background: rgb(215,240,246);
-        padding: 15px 0 35px 15px;
+        padding: 15px 0 15px 15px;
         width: 88%;
-      }
-      div.bfDiv-fysio {
-        padding-bottom: 15px;
-        width: 100%;
       }
       .bfForm-fysio .bfPageIntro {
         background: rgba(255,255,255,0.5);
         padding: 0.6em 0 1em 0.8em;
         margin: -1.1em -1em 1em -1em;
       }
-      .bf-herhaal fieldset {
+      .bfForm-herhaal fieldset {
           margin-top: 0;
           margin-bottom: -0.8em;
   }
-      .bf-herhaal fieldset legend {
+      .bfForm-herhaal fieldset legend {
         font-weight: bold;
         color: rgb(37,74,149);
         margin-right: 0.5em;
         float: left;
       }
-
-    #S1 legend, #S2 legend, #S3 legend, #S4 legend, #S5 legend, #S6 legend,
+    .bfForm-herhaal #S1 legend, #S2 legend, #S3 legend, #S4 legend, #S5 legend, #S6 legend,
     #S7 legend, #S8 legend, #S9 legend, #S10 legend {
       width: 2%;
       padding-bottom: 6px;
     }
-      .bf-herhaal div section.bfElemWrap.bfLabelLeft,
+      .bfForm-herhaal div section.bfElemWrap.bfLabelLeft,
       .bfForm-fysio .bfElemWrap.bfLabelLeft /* Formulier Fysio */ {
           margin: 0.5em 0px -0.7em 0px;
           float: left;
           width: 100%;
        }
-      .bf-herhaal div section.bfElemWrap.bfLabelLeft label,
+      .bfForm-herhaal div section.bfElemWrap.bfLabelLeft label,
       .bfForm-fysio .bfElemWrap.bfLabelLeft label /* Formulier Fysio */ {
         width: 6.5em;
         float: left;
         font-size: 0.9em;
       }
-      .bf-herhaal div section.bfElemWrap.bfLabelLeft input,
-      .bf-herhaal div section.bfElemWrap.bfLabelLeft select,
+      .bfForm-herhaal div section.bfElemWrap.bfLabelLeft input,
+      .bfForm-herhaal div section.bfElemWrap.bfLabelLeft select,
       .bfForm-fysio .bfElemWrap.bfLabelLeft input,
       .bfForm-fysio .bfElemWrap.bfLabelLeft select,
       .bfForm-fysio .bfElemWrap.bfLabelLeft textarea {
@@ -420,7 +415,7 @@ footer.footer div.container > p:last-child {
         padding: 3px;
         margin-left: 2em;
     }
-      .bf-herhaal div section.bfElemWrap.bfLabelLeft select,
+      .bfForm-herhaal div section.bfElemWrap.bfLabelLeft select,
       .bfForm-fysio .bfElemWrap.bfLabelLeft select {
         width: 31%
       }
@@ -463,7 +458,7 @@ footer.footer div.container > p:last-child {
         font-size: 0.9em;
         float: left;
       }
-      .bf-herhaal button[value='extra regel(s) toevoegen'],
+      .bfForm-herhaal button[value='extra regel(s) toevoegen'],
       .bfSubmitButton,
       .bfCancelButton {
         float: right;
@@ -476,12 +471,12 @@ footer.footer div.container > p:last-child {
         border-radius: 0.3em;
         margin: -1px 35px -1px -1px;
             }
-      .bf-herhaal button[value='extra regel(s) toevoegen']:hover,
+      .bfForm-herhaal button[value='extra regel(s) toevoegen']:hover,
       .bfSubmitButton:hover,
       .bfCancelButton:hover {
         border: 1px solid rgb(37,74,149);
       }
-      .bf-herhaal button[value='extra regel(s) toevoegen'] {
+      .bfForm-herhaal button[value='extra regel(s) toevoegen'] {
           float: left;
           margin: 1em;
            }
@@ -761,7 +756,7 @@ margin-top: -7%;
   }
   main#content.span6 {
     width: 120%;
-    margin-top: -2.5em;
+    margin-top: -0.5em;
   }
   main#content h1, .page-header h1 {
     /*margin-bottom: -1em;*/
@@ -781,63 +776,84 @@ margin-top: -7%;
     width: 100%;
   }
   /* formulier mobiel */
+
   body.site.com_breezingforms {
     padding: 0;
-    width: 98%;
   }
-  .bfFormDiv .BfDiv-fysio {}
-    .BfDiv-fysio {
-      /*width: 95%;*/
-    }
-    .bfForm-fysio .bfElemWrap.bfLabelLeft input,
-    .bfForm-fysio .bfElemWrap.bfLabelLeft select,
-    .bfForm-fysio .bfElemWrap.bfLabelLeft textarea {
-      margin-left: 0;
-      width: 95%;
-    }
-    .bf-herhaal  {
-      margin-top: -1.1em;
-      width: 120%;
-      /*border: 1px solid red;*/
-    }
-    .bf-herhaal div section.bfElemWrap.bfLabelLeft label {
-      width: 90%;
+div#sidebar {
+  display: none;
+}
+  div.bfDiv-herhaal  {
+    margin-top: -1.1em;
+    width: 120%;
+    /*border: 1px solid red;*/
+    padding: 3px;
+  }
+  fieldset#S1 {
+      margin-top: 1em;
+  }
+  .bfForm-herhaal fieldset {
+    margin-bottom: 0em;
+}
+
+    .bfForm-herhaal div section.bfElemWrap.bfLabelLeft label {
+      width: 97%;
       margin: 0.1em 0.1em;
     }
-    .bf-herhaal div section.bfElemWrap.bfLabelLeft input,
-    .bf-herhaal div section.bfElemWrap.bfLabelLeft select {
+    .bfForm-herhaal div section.bfElemWrap.bfLabelLeft input,
+    .bfForm-herhaal div section.bfElemWrap.bfLabelLeft select {
       margin-left: 0;
-      width: 90%;
-    }
-    input[placeholder='b.v. Otrivin'], input[placeholder='medicijnnaam'],
-    input[placeholder=sterkte], input[placeholder='bijv. 500'], input[placeholder=gebruik], input[placeholder='bijv. 2x daags'], input[placeholder=aantal], input[placeholder='bijv. 30'],
-    .ff_elem.chzn-done {
-      width: 100%;
-    }
-    label#bfLabel170, label#bfLabel171, label#bfLabel172, label#bfLabel173,
-    label#bfLabel938, label#bfLabel939, label#bfLabel940, label#bfLabel941, label#bfLabel942 {
-      margin-top:0;
+      width: 97%;
+      /*border: 1px solid red;*/
+      float: left;
     }
     label#bfLabel938 {
       clear: both;
       margin-left: -0.2em;
       margin-top: -1em;
-      float: left;
     }
-    .bf-herhaal button[type=button] {
+    label#bfLabel939, label#bfLabel940, label#bfLabel941, label#bfLabel942 {
+      margin-top:0;
+      clear: both;
+    }
+    input[placeholder='b.v. Otrivin'], input[placeholder='medicijnnaam'],
+    input[placeholder=sterkte], input[placeholder='bijv. 500'],
+    input[placeholder=gebruik], input[placeholder='bijv. 2x daags'],
+    input[placeholder=aantal], input[placeholder='bijv. 30'] {
+        width: 97%;
+      }
+    .ff_elem.chzn-done {
+        width: 50%;
+        clear: both;
+      }
+    .bfForm-herhaal button[type=button] {
       float: left;
-      border: 1px solid rgb(37,74,149);
+      border: 1px solid rgb(0,0,150);
       border-radius: 0.3em;
       width: 100%;
-      margin: 1em 0;
+      margin: 2em 0;
+      padding: 5px;
     }
-    fieldset#bfQuickModeSection23315 label {
+    div.bfDiv-fysio {
+          width: 97%;
+        }
+
+      .bfDiv-fysio .bfElemWrap.bfLabelLeft input,
+      .bfDiv-fysio .bfElemWrap.bfLabelLeft select,
+      .bfDiv-fysio .bfElemWrap.bfLabelLeft textarea {
+          margin-left: 0;
+          width: 95%;
+        }
+
+
+/*    fieldset#bfQuickModeSection23315 label {
       display: none;
     }
-
     input[placeholder='DD-MM-JJJJ'] {
       width: 100% !important;
     }
+*/
+
 
     .voetregel p, .voetregel p a {
       display: none;
