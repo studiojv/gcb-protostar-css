@@ -428,9 +428,10 @@ footer.footer div.container > p:last-child {
       .bfElemWrap.bfLabelTop.bfRolloverBg {
         background: transparent !important;
       }
-/* styling van de medicijnregels */
-      fieldset#S1 {
-    margin-top: 3em;
+/* styling van de bovenste medicijnregel */
+.bfForm-herhaal .bfBlock #S1 {
+    margin-top: 4em;
+    float: left;
 }
   /* styling van de inputs */
       input[placeholder='b.v. Otrivin'], input[placeholder='medicijnnaam'] {
@@ -784,17 +785,23 @@ margin-top: -7%;
   body.site.com_breezingforms {
     padding: 0;
   }
-div#sidebar {
+  div#sidebar {
   display: none;
 }
   div.bfDiv-herhaal  {
     margin-top: -1.1em;
-    width: 120%;
-    /*border: 1px solid red;*/
-    padding: 3px;
+    width: 113%;
+    padding: 0.8em;
   }
-  fieldset#S1 {
-      margin-top: 1em;
+  .bfForm-herhaal #S1 legend {
+    width: 100%;
+    margin-top: -1.5em;
+    padding-bottom: 6px;
+  }
+  #S2 legend, #S3 legend, #S4 legend, #S5 legend, #S6 legend,
+  #S7 legend, #S8 legend, #S9 legend, #S10 legend {
+    width: 100%;
+    padding-bottom: 0;
   }
   .bfForm-herhaal fieldset {
     margin-bottom: 0em;
@@ -807,7 +814,7 @@ div#sidebar {
     .bfForm-herhaal div section.bfElemWrap.bfLabelLeft input,
     .bfForm-herhaal div section.bfElemWrap.bfLabelLeft select {
       margin-left: 0;
-      width: 97%;
+      width: 90%;
       float: left;
     }
     label#bfLabel938 {
@@ -823,7 +830,7 @@ div#sidebar {
     input[placeholder=sterkte], input[placeholder='bijv. 500'],
     input[placeholder=gebruik], input[placeholder='bijv. 2x daags'],
     input[placeholder=aantal], input[placeholder='bijv. 30'] {
-        width: 97%;
+        width: 90%;
       }
     .ff_elem.chzn-done {
         width: 50%;
@@ -836,7 +843,7 @@ div#sidebar {
         /*color: red;*/
           }
   .bfForm-herhaal textarea.ff_elem {
-        width: 95%;
+        width: 90%;
         margin-left: 0;
       }
 
