@@ -403,8 +403,12 @@ footer.footer div.container > p:last-child {
         float: left;
         font-size: 0.9em;
       }
+      .bfForm-herhaal #bfElemWrap1518.bfElemWrap.bfLabelLeft label {
+        width: 9em;
+      }
       .bfForm-herhaal div section.bfElemWrap.bfLabelLeft input,
       .bfForm-herhaal div section.bfElemWrap.bfLabelLeft select,
+      .bfForm-herhaal textarea.ff_elem,
       .bfForm-fysio .bfElemWrap.bfLabelLeft input,
       .bfForm-fysio .bfElemWrap.bfLabelLeft select,
       .bfForm-fysio .bfElemWrap.bfLabelLeft textarea {
@@ -648,7 +652,7 @@ margin-top: -7%;
     background: none;
     float: right;
     margin-right: 5%;
-    margin-top: -35%;
+    margin-top: -11.5em;
   }
   /* de lijnen van het hamburgermenu */
   div.navicon-line {
@@ -804,7 +808,6 @@ div#sidebar {
     .bfForm-herhaal div section.bfElemWrap.bfLabelLeft select {
       margin-left: 0;
       width: 97%;
-      /*border: 1px solid red;*/
       float: left;
     }
     label#bfLabel938 {
@@ -826,6 +829,17 @@ div#sidebar {
         width: 50%;
         clear: both;
       }
+  section#bfElemWrap1518.bfElemWrap.bfLabelLeft label#bfLabel1518 {
+    width: 100%;
+  }      }
+  .bfForm-herhaal #bfElemWrap1518.bfElemWrap.bfLabelLeft  {
+        /*color: red;*/
+          }
+  .bfForm-herhaal textarea.ff_elem {
+        width: 95%;
+        margin-left: 0;
+      }
+
     .bfForm-herhaal button[type=button] {
       float: left;
       border: 1px solid rgb(0,0,150);
