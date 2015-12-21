@@ -1,4 +1,4 @@
-/* 21-12-15 VAN versie 18-12 Joomla 3.4.6 - 0903-gcb-2015-protostar/templates/protostar/gcb-protostar */
+/* 17-12-15 Joomla 3.4.6 - 0903-gcb-2015-protostar/templates/protostar/gcb-protostar */
 /* DRY-ing */
 /* donkerblauw (Reflex Blue) = rgb(37,74,149) = #254A95 */
 /* turkooisblauw (lichtblauw) = color: rgb(64,185,212)*/
@@ -403,12 +403,8 @@ footer.footer div.container > p:last-child {
         float: left;
         font-size: 0.9em;
       }
-      .bfFieldset-wrapper.bfWrapperBlock.bfClearfix {
-          float: left;
-      }
       .bfForm-herhaal div section.bfElemWrap.bfLabelLeft input,
       .bfForm-herhaal div section.bfElemWrap.bfLabelLeft select,
-      .bfForm-herhaal div section.bfElemWrap.bfLabelLeft textarea,
       .bfForm-fysio .bfElemWrap.bfLabelLeft input,
       .bfForm-fysio .bfElemWrap.bfLabelLeft select,
       .bfForm-fysio .bfElemWrap.bfLabelLeft textarea {
@@ -422,13 +418,6 @@ footer.footer div.container > p:last-child {
       .bfForm-herhaal div section.bfElemWrap.bfLabelLeft select,
       .bfForm-fysio .bfElemWrap.bfLabelLeft select {
         width: 31%
-      }
-  /* Bijzonderheden en opmerkingen */
-      label#bfLabel1518 {
-          width: 8em;
-      }
-      textarea#ff_elem1518 {
-          margin-left: 2.8%;
       }
 /* de gele rollovers verwijderen */
       .bfElemWrap.bfLabelLeft.bfRolloverBg,
@@ -472,8 +461,7 @@ footer.footer div.container > p:last-child {
       .bfForm-herhaal button[value='extra regel(s) toevoegen'],
       .bfSubmitButton,
       .bfCancelButton {
-        /*float: right;*/
-        /*margin: -1px 35px -1px -1px;*/
+        float: right;
         padding: 1px 5px 1px 5px;
         color: rgb(37,74,149);
         font-weight: bold;
@@ -481,24 +469,17 @@ footer.footer div.container > p:last-child {
         background: transparent;
         border: 1px solid transparent;
         border-radius: 0.3em;
+        margin: -1px 35px -1px -1px;
             }
-      .bfForm-herhaal button[value='extra regel(s) toevoegen'] {
-        float: left;
-        margin: 1em 0;
-      }
-      button.bfCancelButton {
-        float: left;
-        margin: 2em 0;
-      }
-      button#bfSubmitButton {
-        float: right;
-          margin: 2em;
-      }
       .bfForm-herhaal button[value='extra regel(s) toevoegen']:hover,
       .bfSubmitButton:hover,
       .bfCancelButton:hover {
         border: 1px solid rgb(37,74,149);
       }
+      .bfForm-herhaal button[value='extra regel(s) toevoegen'] {
+          float: left;
+          margin: 1em;
+           }
 
       .bfForm-fysio .bfSubmitButton {
           margin-top: 2.2em;
@@ -845,15 +826,6 @@ div#sidebar {
         width: 50%;
         clear: both;
       }
-      /* Bijzonderheden en opmerkingen */
-          label#bfLabel1518 {
-              width: 100%;
-          }
-          textarea#ff_elem1518 {
-              margin-left: 0;
-              width: 97%;
-          }
-
     .bfForm-herhaal button[type=button] {
       float: left;
       border: 1px solid rgb(0,0,150);
@@ -861,9 +833,6 @@ div#sidebar {
       width: 100%;
       margin: 2em 0;
       padding: 5px;
-    }
-    button#bfSubmitButton {
-        margin: 2em 0;
     }
     div.bfDiv-fysio {
           width: 97%;
